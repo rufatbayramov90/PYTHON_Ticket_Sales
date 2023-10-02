@@ -33,7 +33,7 @@ if size =="S":
 elif size =="M":
     bill = 20
     print(f"Please pay ${bill}")
-else:
+elif size =="L":
     bill = 25
     print(f"Please pay ${bill}")
 
@@ -45,6 +45,7 @@ if add_pepperoni =="Y":
 add_cheese = input("Do you want extra cheese? Y or N")
 if add_cheese =="Y":
     bill += 10
-    print(f"Please pay ${bill}")
-else:
+add_question = input("Are you a student? Y or N")
+if add_question == "Y":
+    bill -= 3
     print(f"Your final bill ${bill}")
